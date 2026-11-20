@@ -1,7 +1,8 @@
 # Throttle website
 
 The public website of Throttle: what it is, its terms of service and its privacy policy.
-TikTok's and Meta's developer forms ask for these three addresses before an app can be saved.
+TikTok's and Meta's developer forms ask for these three addresses before an app can be saved, and
+Google asks for them before the sign-in of an app can be made to last.
 
 Plain static pages. There is no build step and nothing to install.
 
@@ -28,6 +29,11 @@ Every later push to `main` updates the site by itself.
 - **TikTok developer portal**, in the app's details: Website URL, Terms of Service URL, Privacy Policy URL.
 - **Meta app dashboard**, under App settings, Basic: Privacy Policy URL and Terms of Service URL. If it asks
   for data deletion instructions, use `privacy.html#removing`.
+- **Google Cloud console**, under Google Auth Platform, Branding: Application home page, Application
+  privacy policy link, Application terms of service link. On the same page, under "Authorized domains",
+  add the domain of these addresses (`p0six.github.io` for the addresses above). Google keeps
+  "Publish app" on its Audience page grey until this page is filled in. Leave the logo empty there:
+  with a logo, Google wants to verify the app first.
 
 ## Looking at it on your own computer
 
